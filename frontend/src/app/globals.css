@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+@layer utilities {
+  .animate-waveL {
+    /* Thodi fast aur uchi wave */
+    animation: deep-wave 12s ease-in-out infinite;
+  }
+  
+  .animate-waveR {
+    /* Second layer thodi alag rhythm mein */
+    animation: deep-wave-reverse 15s ease-in-out infinite;
+  }
+
+  @keyframes deep-wave {
+    0% { transform: translateX(0) translateY(0) scaleY(1); }
+    50% { transform: translateX(-25%) translateY(-10px) scaleY(1.2); } /* Wave uper uthegi */
+    100% { transform: translateX(-50%) translateY(0) scaleY(1); }
+  }
+
+  @keyframes deep-wave-reverse {
+    0% { transform: translateX(-50%) translateY(0) scaleY(1); }
+    50% { transform: translateX(-25%) translateY(-15px) scaleY(1.3); } /* Reverse deep wave */
+    100% { transform: translateX(0%) translateY(0) scaleY(1); }
+  }
+}
