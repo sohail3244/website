@@ -9,7 +9,7 @@ import CardSection from "@/components/common/CardSection";
 import Project from "./project/page";
 import Services from "./services/page";
 
-export default function FlownDeveloperPage() {
+export default function Home() {
   const [showScroll, setShowScroll] = useState(false);
 
   // Scroll position check karne ke liye logic
